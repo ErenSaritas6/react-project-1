@@ -53,7 +53,8 @@ const AddUser = (props) => {
     };
 
     return (
-      <div>
+      <React.Fragment>
+        
         {error && <ErrorModal 
         title={error.title} 
         message={error.message}
@@ -87,7 +88,7 @@ const AddUser = (props) => {
           </form>
         </Card>
 
-      </div>
+      </React.Fragment>
     );
 };
 
